@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="page_wrapper">
+        <div class="side_bar">
+            <div class="side_head">
+                <!-- <h1 class="main_title dashboard_title">Dashboard</h1> -->
+                <div class="btn_toggle_menu">
+                    <ion-icon name="grid-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="side_body">
+                <div class="menu">
+                    <ul class="menu_option">
+                        <li class="menu_item ">
+                            <div class="menu_item_infor_wrapper">
+                                <a href="#">
+                                    <div class="menu_icon"><ion-icon name="home-outline"></ion-icon></div>
+                                    <div class="menu_info">Dashboard</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="menu_item has_child">
+                            <div class="menu_item_infor_wrapper">
+                                <div class="menu_icon"><ion-icon name="pricetag-outline"></ion-icon></div>
+                                <div class="menu_info">Quản lý danh mục</div>
+                                <div class="icon_down">
+                                    <ion-icon name="caret-down-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="chil_menu">
+                                <ul>
+                                    <li>
+                                        <a href="./categories/create">Thêm danh mục mới</a>
+                                    </li>
+                                    <li>
+                                        <a href="./categories/edit">
+                                            Chỉnh sửa danh mục
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./categories">
+                                            Bảng thông tin danh mục
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu_item has_child">
+                            <div class="menu_item_infor_wrapper">
+                                <div class="menu_icon"><ion-icon name="cart-outline"></ion-icon></div>
+                                <div class="menu_info">Quản lý sản phẩm</div>
+                                <div class="icon_down">
+                                    <ion-icon name="caret-down-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="chil_menu">
+                                <ul>
+                                    <li><a href="./add-product">Thêm sản phẩm</a></li>
+                                    <li><a href="./edit-product">
+                                            Chỉnh sửa sản phẩm
+                                        </a></li>
+                                    <li><a href="./products">
+                                            Bảng thông tin sản phẩm
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu_item has_child">
+                            <div class="menu_item_infor_wrapper">
+                                <div class="menu_icon"><ion-icon name="card-outline"></ion-icon></div>
+                                <div class="menu_info">Danh sách đơn hàng</div>
+                                <div class="icon_down">
+                                    <ion-icon name="caret-down-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="chil_menu">
+                                <ul>
+                                    <li><a href="./edit-order">Chỉnh sửa đơn hàng</a></li>
+                                    <li><a href="./add-order">
+                                            Tạo đơn hàng mới
+                                        </a></li>
+                                    <li><a href="./orders">
+                                            Bảng thông tin đơn hàng
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu_item has_child">
+                            <div class="menu_item_infor_wrapper">
+                                <div class="menu_icon"><ion-icon name="people-outline"></ion-icon></div>
+                                <div class="menu_info">Thông tin người dùng</div>
+                                <div class="icon_down">
+                                    <ion-icon name="caret-down-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="chil_menu">
+                                <ul>
+                                    <li><a href="./edit-order">Chỉnh sửa thông tin người dùng</a></li>
+                                    <li><a href="./add-user">
+                                            Thêm người dùng mới
+                                        </a></li>
+                                    <li><a href="./users">
+                                            Bảng thông tin người dùng
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <div class="search_box">
+                    <label for="search">
+                        <ion-icon name="search-outline"></ion-icon>
+                        <input type="text" name="search_value" id="search" placeholder="Search">
+                    </label>
+                </div>
+
+                <div class="admin_action">
+                    <div class="notify"><ion-icon name="notifications-outline"></ion-icon></div>
+                    <div class="admin_avatar">
+                        <img src="../public/imgs/user.png" alt="avatar">
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="section">
+                    <h3 class="section_title">
+                        <!-- Thống kê -->
+                    </h3>
+                    <div class="section_content">
+                        <div class="card_detail">
+                            <h4 class="card_title">Tổng số đơn hoàn thành</h4>
+                            <span class="data_number">100/200</span>
+                            <div class="process_bar">
+                                <div class="process"></div>
+                            </div>
+                            <a href="#" class="btn_load_detail">Xem chi tiết</a>
+                        </div>
+                        <div class="card_detail">
+                            <h4 class="card_title">Tổng số đơn hoàn thành</h4>
+                            <spoan class="data_number">100/200</spoan>
+                            <div class="process_bar">
+                                <div class="process"></div>
+                            </div>
+                            <a href="#" class="btn_load_detail">Xem chi tiết</a>
+                        </div>
+                        <div class="card_detail">
+                            <h4 class="card_title">Tổng số đơn hoàn thành</h4>
+                            <spoan class="data_number">100/200</spoan>
+                            <div class="process_bar">
+                                <div class="process"></div>
+                            </div>
+                            <a href="#" class="btn_load_detail">Xem chi tiết</a>
+                        </div>
+                        <div class="card_detail">
+                            <h4 class="card_title">Tổng số đơn hoàn thành</h4>
+                            <spoan class="data_number">100/200</spoan>
+                            <div class="process_bar">
+                                <div class="process"></div>
+                            </div>
+                            <a href="#" class="btn_load_detail">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h3 class="section_title">
+                        <!-- Thống kê -->
+                    </h3>
+                    <div class="">
+                        <canvas id="chart_product"></canvas>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- script -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../public/main.js"></script>
+
+    <script>
+        const ctx = document.getElementById('chart_product');
+        ctx.width = 300;
+        ctx.height = 400;
+        const data = {
+            labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+            datasets: [{
+                label: 'Số sản phẩm đã bán',
+                data: [65, 59, 80, 81, 56, 55, 40, 80, 81, 56, 55, 40],
+                backgroundColor: "#6c5ce7",
+                borderColor: "#a29bfe",
+                borderWidth: 1
+            }]
+        };
+        const config = {
+            type: 'line',
+            data: data,
+            options: {
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            },
+        };
+
+        new Chart(ctx, config);
+    </script>
+</body>
+
+</html>
